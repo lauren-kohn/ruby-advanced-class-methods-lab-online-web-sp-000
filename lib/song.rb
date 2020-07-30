@@ -55,7 +55,9 @@ class Song
     collection = new_data.collect do |item|
       artist = new_data[0]
       song_name = new_data[1]
-      
+      song = self.new
+      song.name = song_name
+      song.artist_name = artist
   end
   
   def self.create_from_filename
