@@ -51,7 +51,7 @@ class Song
   end
   
   def self.new_from_filename(data)
-    new_data = data.split([a-zA-Z\s])
+    new_data = data.split("[a-zA-Z\s])
     new_data
   end
   
