@@ -54,9 +54,8 @@ class Song
     new_data = data.split(" - ")
     new_data[1] = new_data[1].chomp
     song = self.new
-    song.name = song
-      song.artist_name = artist
-    end
+    song.name = new_data[1]
+    song.artist_name = new_data[0]
     song
   end
   
