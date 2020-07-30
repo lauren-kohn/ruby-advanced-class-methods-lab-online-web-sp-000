@@ -5,8 +5,8 @@ class Song
   @@all = []
 
   def self.create
-    song = self.new
-    song.save
+    song = self.new # self is the Song class
+    song.save # calls the #save method to add new instance to the @@all class variable
     song
   end
   
