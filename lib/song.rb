@@ -52,7 +52,10 @@ class Song
   
   def self.new_from_filename(data)
     new_data = data.split("[a-zA-Z\s]")
-    new_data
+    collection = new_data.collect do |item|
+      artist = new_data[0]
+      song = new_data[1]
+      
   end
   
   def self.create_from_filename
