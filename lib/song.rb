@@ -54,7 +54,7 @@ class Song
     new_data = data.split("[a-zA-Z\s]")
     collection = new_data.collect do |item|
       artist = new_data[0]
-      song = new_data[1]
+      song_name = new_data[1]
       
   end
   
