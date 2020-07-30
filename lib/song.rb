@@ -53,7 +53,7 @@ class Song
   def self.new_from_filename(data)
     new_data = data.split(" - ")
     new_data[1] = new_data[1].chomp
-      song = self.new
+    song = self.new
       song.name = song_name
       song.artist_name = artist
     end
